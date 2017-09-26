@@ -31,14 +31,14 @@ var projects = {
     pause: {
         title: "#2 pause_.",
         imgs:  ['/public/style/projects/pause.jpg'],
-        imgHs: ['500px', '500px', '500px'],
-        imgWs: ['1000px', '1000px', '1000px'],
+        imgHs: ['500px'],
+        imgWs: ['1000px'],
         text: "Inspired by 80s AV hardware and a boat-load of Japanese pop from the same period of time.",
     },
 
     monarch: {
         title: "#3 monarch_.",
-        imgs: ["/public/style/projects/monarch-open-top.jpg", "/public/style/projects/monarch-iso.jpg ", "/public/style/projects/monarch-closed.jpg", 
+        imgs: ["/public/style/projects/monarch-open-top.jpg", "/public/style/projects/monarch-iso.jpg", "/public/style/projects/monarch-closed.jpg", 
             "/public/style/projects/monarch-buttons.jpg", "/public/style/projects/monarch-wing-tip.jpg", "/public/style/projects/monarch-wing-detail.jpg"],
         imgHs: ['643px', '564px', '564px', '1037px', '1037px', '1037px'],
         imgWs: ['960px', '940px', '940px', '1600px', '1600px', '1600px'],
@@ -64,8 +64,8 @@ var projects = {
     bamboo: {
         title: "#6 Bamboo_.",
         imgs: ["/public/style/projects/bamboo-closed.jpg", "/public/style/projects/bamboo-open.jpg"],
-        imgHs: ['700px',],
-        imgWs: ['1210px',],
+        imgHs: ['700px', '700px'],
+        imgWs: ['1210px', '1210px'],
         text: "Concept developed around the modular lunchboxes of some East Asian cultures. Sections are magnetic pull-aparts on twisted teeth.",
     },
 

@@ -8,7 +8,7 @@
 <body class="project" >
 
 <div class = "proj" >
-    <div class="horizontal-list" style="font-size: 100px; float: left; position: absolute; top: 0; opacity: 0.5;" ><%= project.title %></div>
+    <div class="horizontal-list" style="font-size: 100px; float: left; position: absolute; top: 0; opacity: 0.5;" >#6 Bamboo_.</div>
     <div>
         <a href="/" class ="close" />x</a>
 
@@ -16,16 +16,17 @@
     <div>
         <div class="slideshow-container" >
             
-            <% for(var i = 0; i < project.imgs.length; i++) { %>
             <div class="mySlides" >
-                <img class="pic" src=<%= project.imgs[i] %> width=<% project.imgHs[i] %> height=<% project.imgWs[i] %> style="max-height: 80vh;">
+                <img class="pic" src="/public/style/projects/bamboo-closed.jpg" width="1210px" height="700px" style="max-height: 80vh;">
             </div>
-            <% } %>
             
-            <% if(project.imgs.length > 1) { %>
+            <div class="mySlides" >
+                <img class="pic" src="/public/style/projects/bamboo-open.jpg" width="1210px" height="700px" style="max-height: 80vh;">
+            </div>
+
             <a class="prev" onclick="plusSlides(-1)" >&#10094;</a>
             <a class="next" onclick="plusSlides(1)" >&#10095;</a>
-            <% } %>
+
         </div>
 
         <!--div>filler text</div-->

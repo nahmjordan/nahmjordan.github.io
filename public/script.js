@@ -154,11 +154,11 @@ $("#horizontal-list .page-select").click(function() {//page selector main functi
     {
         if(i === count)//no blue
         {
-            $(this).attr('src', './style/page-scroller-active.jpg');
+            $(this).attr('src', './public/style/page-scroller-active.jpg');
         }
         else//correct
         {
-            $("img.page-select").eq(`${i}`).attr('src', './style/page-scroller-neutral.jpg');
+            $("img.page-select").eq(`${i}`).attr('src', './public/style/page-scroller-neutral.jpg');
         }
     }
     
