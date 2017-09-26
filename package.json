@@ -1,0 +1,28 @@
+{
+  "name": "website",
+  "version": "0.1.0",
+  "description": "personal portfolio for created content",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify ./public/script.js -o ./public/dist/bundle.js",
+    "start": "supervisor -k -e css,ejs,js,json -i .git/,node_modules/ -- app.js",
+    "watch": "watchify ./public/script.js -v -o ./public/dist/bundle.js",
+    "dev": "concurrently --kill-others \"npm run watch\" \"npm run start\""
+  },
+  "author": "Jordan Nahm",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.15.3",
+    "jquery-mousewheel": "^3.1.13",
+    "number-to-words": "^1.2.3",
+    "reload": "^2.1.0",
+    "serve-favicon": "^2.4.4"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "concurrently": "^3.5.0",
+    "watchify": "^3.9.0"
+  }
+}
