@@ -118,7 +118,7 @@ router.get('/', function (req, res) {//front page
     res.sendFile(path.join(publicDir, 'index'))
 });
 
-router.get("/project/:id", function (req, res) {
+/*router.get("/project/:id", function (req, res) {
     var proj = req.params.id;
 
     findProject(proj, function(error, info) {
@@ -127,7 +127,7 @@ router.get("/project/:id", function (req, res) {
 
     });
 
-});
+});*/
 
 router.get("/project/1", function (req, res) {
        
