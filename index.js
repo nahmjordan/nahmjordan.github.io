@@ -123,7 +123,7 @@ router.get("/project/:id", function (req, res) {
 
     findProject(proj, function(error, info) {
         
-            return res.render('project', {project: info});//, project
+            return res.render('project.html', {project: info});//, project
 
     });
 
