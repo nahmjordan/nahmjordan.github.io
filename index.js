@@ -129,8 +129,8 @@ router.get('/', function (req, res) {//front page
 
 });*/
 
-router.get("/project/1", function (req, res) {
+/*router.get("/project/1", function (req, res) {
        
     return res.render('project1.html');//, project
 
-});
+});*/
