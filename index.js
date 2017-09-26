@@ -10,7 +10,7 @@ module.exports = router;
 
 app.use(express.static("public"));
 
-app.set('views', '/views');//error
+//app.set('views', '/views');//error
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 
