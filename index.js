@@ -10,7 +10,7 @@ module.exports = router;
 
 app.use(express.static("public"));
 
-app.set('views', './views');//error
+app.set('views', '/views');//error
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 
@@ -109,23 +109,9 @@ var projects = {
 
 var findProject = function (projNum, callback) {
 
-    /*if(!projects[Object.keys(projects)[projNum]])
-    {
-        return callback(new Error(
-            "No project matching " + projNum
-            )
-        );
-    }
-    else
-    {*/
-
-
-        //var selectedProj = projList[projNum];
-        //return callback(null, projects[projList[projNum]]);
-
         var projSelect = Object.getOwnPropertyNames(projects)[projNum - 1];
         return callback(null, projects[projSelect]);
-    //}
+
 };
 
 router.get('/', function (req, res) {//front page
