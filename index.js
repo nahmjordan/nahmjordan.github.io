@@ -10,7 +10,7 @@ module.exports = router;
 
 app.use(express.static("public"));
 
-app.set('views', './');//error
+app.set('views', './views');//error
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 
@@ -123,8 +123,14 @@ router.get("/project/:id", function (req, res) {
 
     findProject(proj, function(error, info) {
         
-            return res.render('project.html', {project: info});//, project
+            return res.render('project.ejs', {project: info});//, project
 
     });
+
+});
+
+router.get("/project/1", function (req, res) {
+       
+    return res.render('project1.html');//, project
 
 });
