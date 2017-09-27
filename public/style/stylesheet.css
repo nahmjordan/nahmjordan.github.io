@@ -263,6 +263,7 @@ ul#horizontal-list li {
 img.pic {
     display: block;
     margin: 0 auto;
+    z-index: 50;
     /*min-width: 100%;*/
     /*min-height: 20%;*/
     /*margin-top: -25%;*/

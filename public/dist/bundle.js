@@ -454,28 +454,59 @@ $("div.contact").mouseenter(function () {//contact hover
 
 });
 
-/*$("img.pic").mouseenter(function () {//contact hover
+$("img.pic:first").mouseenter(function () {//first image details
 
-    var text1 = "The concept for a foldable speaker system which uses the geometry of a butterfly to allow a wider spread of audio coverage.";
-    var text2 = "Inspired by 80s AV hardware and a ton of Japanese pop from the same period of time.";
-    var text3 = "The concept for a foldable speaker system which uses the geometry of a butterfly to allow a wider spread of audio coverage.";
-    var text4 = "Grad-year class sweater concept; these designs have long existed as gears and machine parts and a grad year. Shipments of orders pending.";
-    var text5 = "Inspired by the awareness of air quality differences and their inevitable long-term impacts.";
-    var text6 = "Concept developed around the modular lunchboxes of some East Asian cultures. Sections are magnetic pull-aparts on twisted teeth.";
-    var text7 = "The first attempt at designing a trainer which does not use traditional laces. This design attempts wrapping elments of the shoe body and reattaching to secure tightness.";
-    var text8 = "A study on the maximized geometry of honeycomb and how to effectively use it's spatial advantage in residential planning.";
-    var text9 = "Part of a series covering the origins of playing cards. The term “ace” comes from the lowest valued latin coin in the Roman Empire. Upon this coin, the Romans stamped Janus the god of beginnings and ends. Egyptians valued scarabs and dung beetles with the same esteem for the diminutive task of rolling dung. Hence the native rose chafer beetle was the perfect specimen for a card of both great and small value.";
-    var text10 = "Design asset formulated from the recognizable appearance of UV resistant prescription bottles.";
+    var selectText = ["The concept for a foldable speaker system which uses the geometry of a butterfly to allow a wider spread of audio coverage.",
+    "Inspired by 80s AV hardware and a ton of Japanese pop from the same period of time.",
+    "The concept for a foldable speaker system which uses the geometry of a butterfly to allow a wider spread of audio coverage.",
+    "Grad-year class sweater concept; these designs have long existed as gears and machine parts and a grad year. Shipments of orders pending.",
+    "Inspired by the awareness of air quality differences and their inevitable long-term impacts.",
+    "Concept developed around the modular lunchboxes of some East Asian cultures. Sections are magnetic pull-aparts on twisted teeth.",
+    "The first attempt at designing a trainer which does not use traditional laces. This design attempts wrapping elments of the shoe body and reattaching to secure tightness.",
+    "A study on the maximized geometry of honeycomb and how to effectively use it's spatial advantage in residential planning.",
+    "Part of a series covering the origins of playing cards. The term “ace” comes from the lowest valued latin coin in the Roman Empire. Upon this coin, the Romans stamped Janus the god of beginnings and ends. Egyptians valued scarabs and dung beetles with the same esteem for the diminutive task of rolling dung. Hence the native rose chafer beetle was the perfect specimen for a card of both great and small value.",
+    "Design asset formulated from the recognizable appearance of UV resistant prescription bottles.",];
 
+    //var projNum = $('div.horizontal-list').text().charAt(1);
 
+    $(this).animate({opacity: '0'}, 300, (projNum) => {
 
+        const info = document.createElement("div");
+
+        var projNum = parseInt($('div.horizontal-list').text().substring(1, 2), 10) - 1;        
+
+        const imgLeft = this.getBoundingClientRect().left;
+        //const imgTop = this.getBoundingClientRect().top; //broken at the moment
+
+        info.className = "info";
+        info.innerHTML = selectText[projNum];
+        //info.innerHTML = selectText[blah];
+        info.style.backgroundColor = "#ffff4c";
+        info.style.zIndex = -10;
+        //info.innerHTML = "testing testing testing!!!!!!!!!!!"
+        info.style.position = "absolute";
+        info.style.float = "right";
+        info.style.width = "100%";//this.clientWidth + "px";
+        info.style.height = this.clientHeight + "px";
+        //info.style.top = imgTop;
+        info.style.top = 0;
+        //info.style.left = imgLeft + "px";
+        info.style.fontSize = "64px";
+
+        $('div.mySlides').append(info);
+
+    });
  
 
 }).mouseout(function () {
+        
+    $('div.info').css('display', 'none');
 
-    $(this).animate({height: "10vh"}, 100, () => {
-        $(this).css("background-color", "transparent");
-    });
+    if($('div.info').css('display', 'none'))
+    {
+        $(this).animate({opacity: '1'}, 100)
+    }
+});
 
-});*/
+//add next/prev project options for routing
 },{"jquery-mousewheel":1,"number-to-words":2}]},{},[3]);
