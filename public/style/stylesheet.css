@@ -252,6 +252,8 @@ ul#horizontal-list li {
     position: absolute;
     display: none;
     vertical-align: middle;
+    max-height: 100vh;
+    max-width: 100 vw;
 }
 
 img.pic {
