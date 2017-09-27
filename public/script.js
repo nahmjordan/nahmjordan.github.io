@@ -226,7 +226,7 @@ $("div.contact").mouseenter(function () {//contact hover
 
 });
 
-$("img.pic").mouseenter(function () {//contact hover
+/*$("img.pic").mouseenter(function () {//contact hover
 
     var text1 = "The concept for a foldable speaker system which uses the geometry of a butterfly to allow a wider spread of audio coverage.";
     var text2 = "Inspired by 80s AV hardware and a ton of Japanese pop from the same period of time.";
@@ -241,7 +241,7 @@ $("img.pic").mouseenter(function () {//contact hover
 
 
 
-    $(this).attr('src', './public/style/jn1000-favicon.gif'); 
+ 
 
 }).mouseout(function () {
 
@@ -249,4 +249,4 @@ $("img.pic").mouseenter(function () {//contact hover
         $(this).css("background-color", "transparent");
     });
 
-});
+});*/
