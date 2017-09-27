@@ -33,7 +33,7 @@ var projects = {
         imgs:  ['/public/style/projects/pause.jpg'],
         imgHs: ['500px'],
         imgWs: ['1000px'],
-        text: "Inspired by 80s AV hardware and a boat-load of Japanese pop from the same period of time.",
+        text: "Inspired by 80s AV hardware and a ton of Japanese pop from the same period of time.",
     },
 
     monarch: {
@@ -42,7 +42,7 @@ var projects = {
             "/public/style/projects/monarch-buttons.jpg", "/public/style/projects/monarch-wing-tip.jpg", "/public/style/projects/monarch-wing-detail.jpg"],
         imgHs: ['643px', '564px', '564px', '1037px', '1037px', '1037px'],
         imgWs: ['960px', '940px', '940px', '1600px', '1600px', '1600px'],
-        text: "The concept for a foldable speaker system which uses the geometry of a butterfly to allow a wide spread of audio coverage.",
+        text: "The concept for a foldable speaker system which uses the geometry of a butterfly to allow a wider spread of audio coverage.",
     },
 
     mech2020: {
@@ -50,7 +50,7 @@ var projects = {
         imgs: ['/public/style/projects/mech2020-front-back.jpg', '/public/style/projects/mech2020-back.jpg', '/public/style/projects/mech2020-front.jpg'],
         imgHs: ['612px', '1500px', '1500px'],
         imgWs: ['1252px', '1500px', '1500px'],
-        text: "Grad-year class sweater concept, shipments of orders pending.",
+        text: "Grad-year class sweater concept; these designs have long existed as gears and machine parts and a grad year. Shipments of orders pending.",
     },
 
     lungs: {
@@ -75,7 +75,7 @@ var projects = {
          "/public/style/projects/trainer-concept-1-3.jpg", "/public/style/projects/trainer-concept-1-4.jpg"],
         imgHs: ['749px', '863px', '783px', '802px', '796px'],
         imgWs: ['723px', '803px', '735px', '684px', '729px'],
-        text: "The first attempt at designing a trainer which does not use traditional laces.",
+        text: "The first attempt at designing a trainer which does not use traditional laces. This design attempts wrapping elments of the shoe body and reattaching to secure tightness.",
     },
 
     honeycomb: {
@@ -84,7 +84,7 @@ var projects = {
         "/public/style/projects/honeycomb-single-1.jpg",],
         imgHs: ['1071px', '1362px', '1362px', '1211px'],
         imgWs: ['564px', '564px', '564px', '681px'],
-        text: "A study on the geometry of honeycomb and how to effectively use it's spatial advantage in residential planning.",
+        text: "A study on the maximized geometry of honeycomb and how to effectively use it's spatial advantage in residential planning.",
     },
 
     Ace: {
@@ -100,7 +100,7 @@ var projects = {
         imgs: ["/public/style/projects/bottle.jpg"],
         imgHs: ['1000px'],
         imgWs: ['1000px'],
-        text: "A series concerned with the UV resistant plastic prescription bottles are made from.",
+        text: "Design asset formulated from the recognizable appearance of UV resistant prescription bottles.",
     },
 
 

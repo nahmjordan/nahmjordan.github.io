@@ -225,3 +225,28 @@ $("div.contact").mouseenter(function () {//contact hover
     });
 
 });
+
+$("img.pic").mouseenter(function () {//contact hover
+
+    var text1 = "The concept for a foldable speaker system which uses the geometry of a butterfly to allow a wider spread of audio coverage.";
+    var text2 = "Inspired by 80s AV hardware and a ton of Japanese pop from the same period of time.";
+    var text3 = "The concept for a foldable speaker system which uses the geometry of a butterfly to allow a wider spread of audio coverage.";
+    var text4 = "Grad-year class sweater concept; these designs have long existed as gears and machine parts and a grad year. Shipments of orders pending.";
+    var text5 = "Inspired by the awareness of air quality differences and their inevitable long-term impacts.";
+    var text6 = "Concept developed around the modular lunchboxes of some East Asian cultures. Sections are magnetic pull-aparts on twisted teeth.";
+    var text7 = "The first attempt at designing a trainer which does not use traditional laces. This design attempts wrapping elments of the shoe body and reattaching to secure tightness.";
+    var text8 = "A study on the maximized geometry of honeycomb and how to effectively use it's spatial advantage in residential planning.";
+    var text9 = "Part of a series covering the origins of playing cards. The term “ace” comes from the lowest valued latin coin in the Roman Empire. Upon this coin, the Romans stamped Janus the god of beginnings and ends. Egyptians valued scarabs and dung beetles with the same esteem for the diminutive task of rolling dung. Hence the native rose chafer beetle was the perfect specimen for a card of both great and small value.";
+    var text10 = "Design asset formulated from the recognizable appearance of UV resistant prescription bottles.";
+
+
+
+    $(this).attr('src', './public/style/jn1000-favicon.gif'); 
+
+}).mouseout(function () {
+
+    $(this).animate({height: "10vh"}, 100, () => {
+        $(this).css("background-color", "transparent");
+    });
+
+});
