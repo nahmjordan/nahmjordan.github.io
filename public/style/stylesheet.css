@@ -244,6 +244,7 @@ ul#horizontal-list li {
 .slideshow-container {
     top: 15vh;
     max-width: 95vw;
+    max-width: 80vh;
     position: relative;
     margin: auto;
 }
@@ -252,8 +253,7 @@ ul#horizontal-list li {
     position: absolute;
     display: none;
     vertical-align: middle;
-    max-height: 100vh;
-    max-width: 100 vw;
+    
 }
 
 img.pic {
