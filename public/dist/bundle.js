@@ -306,7 +306,7 @@ $(function() {//get today's numerical date
 });
 
 window.onload = () => {//load screen
-    $('#loadScreen').fadeOut(2000);
+    $('#loadScreen').fadeOut(1000);
 }
 
 $(function(page) {//horizontal scroll
@@ -456,7 +456,7 @@ $("div.contact").mouseenter(function () {//contact hover
 
 $("img.pic:first").mouseenter(function () {//first image details
 
-    var selectText = ["Logo and banner design comissioned for a producer.",
+    var selectText = ["Logo and banner design; comissioned for a producer.",
     "Inspired by 80s AV hardware and a ton of Japanese pop from the same period of time.",
     "The concept for a foldable speaker system which uses the geometry of a butterfly to allow a wider spread of audio coverage.",
     "Grad-year class sweater concept; these designs have long existed as gears and machine parts and a grad year. Shipments of orders pending.",
@@ -467,15 +467,13 @@ $("img.pic:first").mouseenter(function () {//first image details
     "Part of a series covering the origins of playing cards. The term “ace” comes from the lowest valued latin coin in the Roman Empire. Upon this coin, the Romans stamped Janus the god of beginnings and ends. Egyptians valued scarabs and dung beetles with the same esteem for the diminutive task of rolling dung. Hence the native rose chafer beetle was the perfect specimen for a card of both great and small value.",
     "Comissioned asset formulated from the recognizable appearance of UV resistant prescription bottles.",];
 
-    //var projNum = $('div.horizontal-list').text().charAt(1);
-
-    $(this).animate({opacity: '0'}, 300, (projNum) => {
+    $(this).animate({opacity: '0'}, 500, (projNum) => {
 
         const info = document.createElement("div");
 
         var projNum = parseInt($('div.horizontal-list').text().substring(1, 3), 10) - 1;        
 
-        const imgLeft = this.getBoundingClientRect().left;
+        //const imgLeft = this.getBoundingClientRect().left;
         //const imgTop = this.getBoundingClientRect().top; //broken at the moment
 
         info.className = "info";
@@ -483,7 +481,8 @@ $("img.pic:first").mouseenter(function () {//first image details
         //info.innerHTML = selectText[blah];
         info.style.backgroundColor = "#ffff4c";
         info.style.zIndex = -10;
-        //info.innerHTML = "testing testing testing!!!!!!!!!!!"
+        info.style.lineHeight = 1.5;
+        info.style.textAlign = "justify";
         info.style.position = "absolute";
         info.style.float = "right";
         info.style.width = "100%";//this.clientWidth + "px";
@@ -504,7 +503,7 @@ $("img.pic:first").mouseenter(function () {//first image details
 
     if($('div.info').css('display', 'none'))
     {
-        $(this).animate({opacity: '1'}, 100)
+        $(this).animate({opacity: '1'}, 200)
     }
 });
 
