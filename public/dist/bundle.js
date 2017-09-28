@@ -456,7 +456,7 @@ $("div.contact").mouseenter(function () {//contact hover
 
 $("img.pic:first").mouseenter(function () {//first image details
 
-    var selectText = ["A banner comissioned for a producer.",
+    var selectText = ["Logo and banner design comissioned for a producer.",
     "Inspired by 80s AV hardware and a ton of Japanese pop from the same period of time.",
     "The concept for a foldable speaker system which uses the geometry of a butterfly to allow a wider spread of audio coverage.",
     "Grad-year class sweater concept; these designs have long existed as gears and machine parts and a grad year. Shipments of orders pending.",
