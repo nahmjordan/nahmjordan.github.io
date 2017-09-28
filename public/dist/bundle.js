@@ -302,7 +302,7 @@ $(function() {//get today's numerical date
 
     var d = new Date();
     var daynum = d.getDate ();
-    document.getElementById("date").innerHTML = "today feels like " + daynum + ".";//One more than yesterday, (randomly generated)
+    //document.getElementById("date").innerHTML = "today feels like " + daynum + ".";//One more than yesterday, (randomly generated)
 });
 
 window.onload = () => {//load screen
