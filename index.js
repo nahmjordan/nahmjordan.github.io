@@ -92,7 +92,7 @@ var projects = {
         imgs: ["/public/style/projects/rose-chafer.jpg"],
         imgHs: ['1000px'],
         imgWs: ['1000px'],
-        text: "Part of a series covering the origins of playing cards. The term “ace” comes from the lowest valued latin coin in the Roman Empire. Upon this coin, the Romans stamped Janus the god of beginnings and ends. Egyptians valued scarabs and dung beetles with the same esteem for the diminutive task of rolling dung. Hence the native rose chafer beetle was the perfect specimen for a card of both great and small value.",
+        text: "Part of a series covering the origins of playing cards. The lowest and highest valued card \"the Ace\" traces its origin through Roman currency and Egyptian legend around scarabs and dung. The native rose chafer beetle was the perfect specimen for a card of both great and small value.",
     },
 
     Bottle: {

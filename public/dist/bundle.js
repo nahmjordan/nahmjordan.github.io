@@ -464,8 +464,9 @@ $("img.pic:first").mouseenter(function () {//first image details
     "Concept developed around the modular lunchboxes of some East Asian cultures. Sections are magnetic pull-aparts on twisted teeth.",
     "The first attempt at designing a trainer which does not use traditional laces. This design attempts wrapping elments of the shoe body and reattaching to secure tightness.",
     "A study on the maximized geometry of honeycomb and how to effectively use it's spatial advantage in residential planning.",
-    "Part of a series covering the origins of playing cards. The term “ace” comes from the lowest valued latin coin in the Roman Empire. Upon this coin, the Romans stamped Janus the god of beginnings and ends. Egyptians valued scarabs and dung beetles with the same esteem for the diminutive task of rolling dung. Hence the native rose chafer beetle was the perfect specimen for a card of both great and small value.",
-    "Comissioned asset formulated from the recognizable appearance of UV resistant prescription bottles.",];
+    "Covering the origin of playing cards, the Ace traces back to origins of Roman currency and Egyptian gods.",
+    "Comissioned asset formulated from the recognizable appearance of UV resistant prescription bottles.",
+    "Modern logo design intended for tech industry."];
 
     $(this).animate({opacity: '0'}, 500, (projNum) => {
 
