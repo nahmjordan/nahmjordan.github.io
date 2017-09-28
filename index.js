@@ -97,7 +97,7 @@ var projects = {
 
     Bottle: {
         title: "#10 Bottle_.",
-        imgs: ["/public/style/projects/bottle.jpg"],
+        imgs: ["/public/style/projects/bottle.jpg", "/public/style/projects/kammx.jpg",],
         imgHs: ['1000px'],
         imgWs: ['1000px'],
         text: "Design asset formulated from the recognizable appearance of UV resistant prescription bottles.",

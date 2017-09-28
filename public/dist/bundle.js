@@ -456,7 +456,7 @@ $("div.contact").mouseenter(function () {//contact hover
 
 $("img.pic:first").mouseenter(function () {//first image details
 
-    var selectText = ["The concept for a foldable speaker system which uses the geometry of a butterfly to allow a wider spread of audio coverage.",
+    var selectText = ["A banner comissioned for a producer.",
     "Inspired by 80s AV hardware and a ton of Japanese pop from the same period of time.",
     "The concept for a foldable speaker system which uses the geometry of a butterfly to allow a wider spread of audio coverage.",
     "Grad-year class sweater concept; these designs have long existed as gears and machine parts and a grad year. Shipments of orders pending.",
@@ -465,7 +465,7 @@ $("img.pic:first").mouseenter(function () {//first image details
     "The first attempt at designing a trainer which does not use traditional laces. This design attempts wrapping elments of the shoe body and reattaching to secure tightness.",
     "A study on the maximized geometry of honeycomb and how to effectively use it's spatial advantage in residential planning.",
     "Part of a series covering the origins of playing cards. The term “ace” comes from the lowest valued latin coin in the Roman Empire. Upon this coin, the Romans stamped Janus the god of beginnings and ends. Egyptians valued scarabs and dung beetles with the same esteem for the diminutive task of rolling dung. Hence the native rose chafer beetle was the perfect specimen for a card of both great and small value.",
-    "Design asset formulated from the recognizable appearance of UV resistant prescription bottles.",];
+    "Comissioned asset formulated from the recognizable appearance of UV resistant prescription bottles.",];
 
     //var projNum = $('div.horizontal-list').text().charAt(1);
 
@@ -473,7 +473,7 @@ $("img.pic:first").mouseenter(function () {//first image details
 
         const info = document.createElement("div");
 
-        var projNum = parseInt($('div.horizontal-list').text().substring(1, 2), 10) - 1;        
+        var projNum = parseInt($('div.horizontal-list').text().substring(1, 3), 10) - 1;        
 
         const imgLeft = this.getBoundingClientRect().left;
         //const imgTop = this.getBoundingClientRect().top; //broken at the moment
@@ -509,4 +509,6 @@ $("img.pic:first").mouseenter(function () {//first image details
 });
 
 //add next/prev project options for routing
+
+
 },{"jquery-mousewheel":1,"number-to-words":2}]},{},[3]);
