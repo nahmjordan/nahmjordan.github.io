@@ -232,13 +232,14 @@ $("img.pic:first").mouseenter(function () {//first image details
     "Inspired by 80s AV hardware and a ton of Japanese pop from the same period of time.",
     "The concept for a foldable speaker system which uses the geometry of a butterfly to allow a wider spread of audio coverage.",
     "Grad-year class sweater concept; these designs have long existed as gears and machine parts and a grad year. Shipments of orders pending.",
-    "Inspired by the awareness of air quality differences and their inevitable long-term impacts.",
+    "Quick sketches to practice form and anatomy.",
     "Concept developed around the modular lunchboxes of some East Asian cultures. Sections are magnetic pull-aparts on twisted teeth.",
     "The first attempt at designing a trainer which does not use traditional laces. This design attempts wrapping elments of the shoe body and reattaching to secure tightness.",
     "A study on the maximized geometry of honeycomb and how to effectively use it's spatial advantage in residential planning.",
     "Covering the origin of playing cards, the Ace traces back to origins of Roman currency and Egyptian gods.",
     "Comissioned asset formulated from the recognizable appearance of UV resistant prescription bottles.",
-    "Modern logo design intended for tech industry."];
+    "Modern logo design intended for tech industry.",
+    "Inspired by the awareness of air quality differences and their inevitable long-term impacts.",];
 
     $(this).animate({opacity: '0'}, 500, (projNum) => {
 
