@@ -241,7 +241,7 @@ $("img.pic:first").mouseenter(function () {//first image details
     "Modern logo design intended for tech industry.",
     "Inspired by the awareness of air quality differences and their inevitable long-term impacts.",];
 
-    $(this).animate({opacity: '0'}, 500, (projNum) => {
+    $(this).animate({opacity: '0'}, 250, (projNum) => {
 
         const info = document.createElement("div");
 
@@ -249,7 +249,7 @@ $("img.pic:first").mouseenter(function () {//first image details
 
         //const imgLeft = this.getBoundingClientRect().left;
         //const imgTop = this.getBoundingClientRect().top; //broken at the moment
-
+      
         info.className = "info";
         info.innerHTML = selectText[projNum];
         //info.innerHTML = selectText[blah];
@@ -272,13 +272,18 @@ $("img.pic:first").mouseenter(function () {//first image details
  
 
 }).mouseout(function () {
-        
-    $('div.info').css('display', 'none');
+
+
+    $(this).animate({opacity: '1'}, 100, () => {
+        $('div.info').remove();
+    });
+    /*$('div.info').css('display', 'none');
 
     if($('div.info').css('display', 'none'))
     {
+        $('div.info').remove();
         $(this).animate({opacity: '1'}, 200)
-    }
+    }*/
 });
 
 //add next/prev project options for routing
