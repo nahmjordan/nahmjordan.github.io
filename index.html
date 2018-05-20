@@ -2,86 +2,43 @@
 <html>
 <head>
 <link rel="stylesheet" href="public/style/stylesheet.css"/>
-<!--link rel="icon" href="style/jn1000-favicon.gif"-->
+<link rel="icon" href="public/style/fbec5d_favicon.ico">
 <title>jordan.</title>
 </head>
 <body>
 
 <div id="loadScreen" >&nbsp;</div>
 
-<div id="twocolumn">
-  <div id="rectangle">
-    <div>
-      <img id="logo" src="./public/style/jn1000.jpg" />
+<div id="nav">
+
+    <div id="nav-margin">
+        <div><a href=""><img style="opacity: 0" width="105px" height="105px" src="../../public/style/small-left-arrow.png"/></a></div>
+        <div id="graphic" class="nav-item"><a href="../../graphic.html">GRAPHIC<br />DESIGN</a></div>
+        <div id="uiux" class="nav-item"><a href="../../ui-ux.html">UI/UX<br />DESIGN</a></div>
+        <div id="indust" class="nav-item"><a href="../../industrial.html">INDUSTRIAL<br />DESIGN</a></div>
+        <div class="nav-item"><a href="../../sketch.html">SKETCHWORK</a></div>
     </div>
-    <div id="dateblock">
-      <p id="date"></p>
-    </div>
-    <!--div id="belowdate">
-      <p>&nbsp;</p>
-    </div-->
-  </div>
-  
-  <div>
-    <div id ="column">
-      <div id ="page-selector">
-        <ul id="horizontal-list">
-          <li><img src="./public/style/page-scroller-active.jpg" class = "page-select" id = "1" /></li>
-          <li id = "separator" ><img src="./public/style/page-scroller-separator.gif" /></li>
-          <li><img src="./public/style/page-scroller-neutral.jpg" class = "page-select" id = "2" /></li>
-          <li id = "separator" ><img src="./public/style/page-scroller-separator.gif" /></li>
-          <li><img src="./public/style/page-scroller-neutral.jpg" class = "page-select" id = "3" /></li>
-          <!--li id = "separator" ><img src="./public/style/page-scroller-separator.gif" /></li>
-          <li><img src="./public/style/page-scroller-neutral.jpg" class = "page-select" id = "4" /></li-->
-        </ul>
-        <div class="contact" >
-          Contact Me_.
-          <p style="font-size: 24px;" >jnahm@uwaterloo.ca</p>
-          <p style="font-size: 24px;" >1-403-869-6768</p>
-        </div>
-      </div>
-      <div class="linklist">
-        <ul>
-            <li><a href="project1.html" class="proj projHover" id = "1" > #1 Ninepce_. </a></li>
-            <li><a href="project2.html" class="proj projHover" id = "2" > #2 Pause_. </a></li>
-            <li><a href="project3.html" class="proj projHover" id = "3" > #3 Monarch_. </a></li>
-            <li><a href="project4.html" class="proj projHover" id = "4" > #4 Mech2020_. </a></li>   
-            <li><a href="project5.html" class="proj projHover" id = "5" > #5 Gestures_. </a></li>                 
-        </ul>
-        <ul style="background: #ffff4c;">
-            <li><a href="project6.html" class="proj projHover" id = "6" > #6 Bamboo_. </a></li>
-            <li><a href="project7.html" class="proj projHover" id = "7" > #7 Trainer1_. </a></li>
-            <li><a href="project8.html" class="proj projHover" id = "8" > #8 Honeycomb_. </a></li>
-            <li><a href="project9.html" class="proj projHover" id = "9" > #9 Ace_. </a></li>  
-            <li><a href="project10.html" class="proj projHover" id = "10" > #10 Bottle_. </a></li>                  
-        </ul>
-        <ul>
-            <li><a href="project11.html" class="proj projHover" id = "11" > #11 No1_. </a></li>
-            <li><a href="project12.html" class="proj projHover" id = "12" > #12 Lungs_. </a></li>
-            <!--li><a href="/project/13" class="proj projHover" id = "13" > #13 Proj_. </a></li>
-            <li><a href="/project/14" class="proj projHover" id = "14" > #14 Proj_. </a></li>      
-            <li><a href="/project/15" class="proj projHover" id = "15" > #15 Proj_. </a></li-->              
-        </ul>
-        <!--ul style="background: #ffff4c;">
-            <li><a href="/project/16" class="proj projHover" id = "16" > #16 Proj_. </a></li>
-            <li><a href="/project/17" class="proj projHover" id = "17" > #17 Proj_. </a></li>
-            <li><a href="/project/18" class="proj projHover" id = "18" > #18 Proj_. </a></li>
-            <li><a href="/project/19" class="proj projHover" id = "19" > #19 Proj_. </a></li>      
-            <li><a href="/project/20" class="proj projHover" id = "20" > #20 Proj_. </a></li>              
-        </ul-->
-      </div>
-    </div>
+
+</div>  
+
+
+<div id="title">
+  JORDAN NAHM
 </div>
+<div id="link-container-about">
+  <img width="" height="" style="float: left;" src="public/style/ellipse.png" />
+  <a class="link-text" id="link-about" href="./about.html">never heard of him?</a>
+</div>
+
+</body>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
-  <script>
-    var d = new Date();
-    //document.getElementById("date").innerHTML = d.getDate();
-  </script>
 
+  <script src="./assets/js/jquery.shuffleLetters.js"></script>
+  <script src="./assets/js/script.js"></script>
+  
   <script src="./public/dist/bundle.js"></script>
 
 
-</body>
 </html>

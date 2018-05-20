@@ -11,6 +11,55 @@ $(document).ready(function () {
         });
     });
 
+    $("div.mySlides").ready(function () {
+
+        $("div.mySlides").first().css("display", "block");
+
+    });
+
+    $("a.cat-link-text").mouseover(function () {
+
+        $("a.cat-link-text").animate({backgroundColor: "#080708", color: "#fafafa"}, 200);
+        
+        $("div#nav").animate({opacity: "0"}, 50);
+        $("div.home-button").animate({opacity: "0"}, 50);
+
+        document.body.style.backgroundRepeat = "no-repeat";//no tiling
+        document.body.style.backgroundPosition = "cover";
+        document.body.style.backgroundSize = "100%";
+        document.body.style.backgroundPosition = "top center";
+
+        //var bkgdImg = document.getElementById("bkgd");
+
+        if(window.location.pathname.includes("industrial")) {
+           var teaserImages = ["bamboo-open.png", "honeycomb-combo-1.jpg", "mech2020-front.jpg", "monarch-buttons.jpg"];
+        }
+        else if (window.location.pathname.includes("graphic")) {
+           var teaserImages = ["mech2020-banner.png", "avro-banner.png", "spotify-logo-banner.png", "playlists-banner.png", "accent-banner.png", "No1.jpg", "ninepce-banner.png"];
+        }
+        else if (window.location.pathname.includes("ui-ux")) {
+            var teaserImages = ["spotify-track-mockup.png", "weather.png"];
+        }
+
+        document.body.style.backgroundImage = "url('./public/style/projects/" + teaserImages[$(this).attr('id')] + "')";
+        //bkgdImg.src = "./public/style/projects/" + teaserImages[$(this).attr('id')];
+
+
+    }).mouseout(function () {
+        document.body.style.background = "#fafafa";
+        //bkgdImg.src = " ";
+        $("div#nav").animate({opacity: "1"}, 100);
+
+        $("a.cat-link-text").animate({backgroundColor: "transparent", color: "#080708"}, 100);
+
+    });
+
+    /*$("a.cat-link-text").click(function () {
+        var linkNum = $(this).attr('id');
+        localStorage.setItem('projNum', 'linkNum');
+        //console.log(linkNum);
+    });*/
+
 });
 
 function clearPageSelectors () {
@@ -21,13 +70,13 @@ function clearPageSelectors () {
 
     for(var i = 0; i < selectorCount; i++)
     { 
-        $("img.page-select").eq(`${i}`).attr('src', './public/style/page-scroller-neutral.jpg');
+        $("img.page-select").eq(`${i}`).attr('src', './public/style/page-scroller-neutral2.jpg');
     }
 };
 
 $(function() {//change bkgd and logo colour
 
-   $('#logo').attr('src', "public/style/jn1000.jpg");
+   //$('#logo').attr('src', "public/style/jn1000.jpg");
 
    var isScrolled = false;
 
@@ -36,10 +85,10 @@ $(function() {//change bkgd and logo colour
       if ($(this).scrollLeft() > 10 && isScrolled === false) 
       {
         $('body').addClass('changeColour');
-        $('#logo').fadeOut(100);
-        $('#logo').attr('src', "public/style/jn1000-white.jpg");
-        $('#dateblock').css('background-color', '#221f1f');
-        $('#logo').fadeIn(400);
+        //$('#logo').fadeOut(100);
+        //$('#logo').attr('src', "public/style/jn1000-white.jpg");
+        //$('#dateblock').css('background-color', '#221f1f');
+        //$('#logo').fadeIn(400);
         $('#date').fadeOut(100);
         $('#date').addClass('changeColourText');
         $('#date').fadeIn(400);
@@ -48,25 +97,46 @@ $(function() {//change bkgd and logo colour
       if ($(this).scrollLeft() < 10) 
       {
         $('body').removeClass('changeColour');
-        $('#logo').attr('src', "public/style/jn1000.jpg");
-        $('#dateblock').css('background-color', '#4c4cff');
-        $('#date').removeClass('changeColourText');
+        //$('#logo').attr('src', "public/style/jn1000.jpg");
+        //$('#dateblock').css('background-color', '#4c4cff');
+        //$('#date').removeClass('changeColourText');
         isScrolled = false;
       }
    });
 });
-
+/*
 $(".page-select").mouseover(function () {//page selector hover
 
-    if($(this).attr('src') == './public/style/page-scroller-neutral.jpg')
+    if($(this).attr('src') == './public/style/page-scroller-neutral2.jpg')
     {   
-        $(this).attr('src', './public/style/page-scroller-hover.jpg');
+        $(this).attr('src', './public/style/page-scroller-hover2.jpg');
     }
 }).mouseout(function () {
 
-    if($(this).attr('src') == './public/style/page-scroller-hover.jpg')
+    if($(this).attr('src') == './public/style/page-scroller-hover2.jpg')
     {
-        $(this).attr('src', './public/style/page-scroller-neutral.jpg');
+        $(this).attr('src', './public/style/page-scroller-neutral2.jpg');
+    }
+});
+*/
+$("img.prev, img.next, img#back-button").mouseover(function () {
+
+    if($(this).attr('src') == '../../public/style/small-right-arrow.png')
+    {
+        $(this).attr('src', '../../public/style/active-small-right-arrow.png');
+    }
+    else if($(this).attr('src') == '../../public/style/small-left-arrow.png')
+    {   
+        $(this).attr('src', '../../public/style/active-small-left-arrow.png');
+    }
+}).mouseout(function () {
+
+    if($(this).attr('src') == '../../public/style/active-small-right-arrow.png')
+    {
+        $(this).attr('src', '../../public/style/small-right-arrow.png');
+    } else if($(this).attr('src') == '../../public/style/active-small-left-arrow.png')
+    {   
+        $(this).attr('src', '../../public/style/small-left-arrow.png');
     }
 });
 
@@ -78,6 +148,46 @@ $(function() {//get today's numerical date
 });
 
 window.onload = () => {//load screen
+    var pathname = window.location.pathname; 
+    var onContact = pathname.includes("contact");
+    var onAbout = pathname.includes("about");
+    var onIndust = pathname.includes("industrial");
+    var onUiux = pathname.includes("ui-ux");
+    var onGraphic = pathname.includes("graphic");
+    var onProject = pathname.includes("project");
+    var onSketch = pathname.includes("sketch");
+
+    if(onProject) {
+        $("#nav").animate({background: "#fafafa"}, 100);
+    }
+
+    if(onIndust || onGraphic || onUiux || onSketch) {
+        
+        $("div#title").animate({color: "#080708"}, 50);
+        $("div#title").animate({bottom: "-12%"});
+
+        if(onIndust) {
+            //$("div#indust").css("color", "#fafafa");  
+            $("div#indust").css("fontFamily", "montserratmedium_italic");  
+            $("div#indust").css("background", "#080708");
+            $("div#indust").css("color", "#fafafa");
+        } else if(onUiux) {
+            //$("div#uiux").css("color", "#fafafa");    
+            $("div#uiux").css("fontFamily", "montserratmedium_italic");  
+            $("div#uiux").css("background", "#080708");
+            $("div#uiux").css("color", "#fafafa");
+        } else if(onGraphic) {
+            // $("div#graphic").css("color", "#fafafa"); 
+            $("div#graphic").css("fontFamily", "montserratmedium_italic"); 
+            $("div#graphic").css("background", "#080708");
+            $("div#graphic").css("color", "#fafafa");    
+        } else if(onSketch) {
+            // $("div#graphic").css("color", "#fafafa"); 
+            $("div#sketch").css("fontFamily", "montserratmedium_italic"); 
+            $("div#sketch").css("background", "#080708");
+            $("div#sketch").css("color", "#fafafa");    
+        }
+    }
     $('#loadScreen').fadeOut(1000);
 }
 
@@ -113,18 +223,29 @@ $("div.linklist").scroll(function() {//page selectors have correct activation wi
         if(scrollDist <= (pageWidth - 200))
         {
             clearPageSelectors();
-            $('img.page-select').eq(0).attr('src', './public/style/page-scroller-active.jpg');
+            $('img.page-select').eq(0).attr('src', './public/style/page-scroller-active2.jpg');
         }
         else if(i != 0)
         {
             if(scrollDist > (pageWidth * i - 200) /*&& scrollDist < (pageWidth * (i + 1 - 200))*/)
             {
                 clearPageSelectors();
-                $('img.page-select').eq(i).attr('src', './public/style/page-scroller-active.jpg');
+                $('img.page-select').eq(i).attr('src', './public/style/page-scroller-active2.jpg');
             }
         }
     }
 });
+/*
+$("img.slide-arrow").click(function() {
+    var enterDist = "500px";
+    var navslideDist = "-=100%";
+    var navslideTime = "500";
+
+    $("div.nav-slide").animate({left: navslideDist}, "slow", function () {
+        $("about").css("opacity", "1");
+    });
+});
+*/
 
 $("#horizontal-list .page-select").click(function() {//page selector main function
     
@@ -154,18 +275,18 @@ $("#horizontal-list .page-select").click(function() {//page selector main functi
     {
         if(i === count)//no blue
         {
-            $(this).attr('src', './public/style/page-scroller-active.jpg');
+            $(this).attr('src', './public/style/page-scroller-active2.jpg');
         }
         else//correct
         {
-            $("img.page-select").eq(`${i}`).attr('src', './public/style/page-scroller-neutral.jpg');
+            $("img.page-select").eq(`${i}`).attr('src', './public/style/page-scroller-neutral2.jpg');
         }
     }
     
 
 });
 
-$("div.linklist li > a").click(function (e) {//dropdown of a project
+/*$("div.linklist li > a").click(function (e) {//dropdown of a project
     
     e.preventDefault();
 
@@ -181,7 +302,7 @@ $("div.linklist li > a").click(function (e) {//dropdown of a project
     proj.css("border-right", "20px solid #7f2f2d");
     proj.css("border-bottom", "20px solid #7f2f2d");//was #a0a0ff
     proj.css("zIndex", "10");
-    proj.css("background-color", "#ff5e5b");
+    proj.css("background-color", "#AD343E");
     proj.css("position", "absolute");
 
     //exit button
@@ -209,82 +330,73 @@ $("div.linklist li > a").click(function (e) {//dropdown of a project
 
 
 
-});
+});*/
 
-$("div.contact").mouseenter(function () {//contact hover
+/*
+$("img.prev, img.next") {
+    if(this.attr("class") = "prev") {
 
+    }
+}*/
 
-    $(this).animate({height: "25vh"}, 300, () => {
-        $(this).css("background-color", "#ff5e5b");
+$("div.home-button").mouseenter(function () {//contact hover
+
+    $(this).animate({backgroundColor: "#fbec5d"}, 100, () => {
+            $(this).css("color", "#080708");
+            $(this).css("font-family", "montserratmedium_italic");
     });
-   
-}).mouseout(function () {
-
-    $(this).animate({height: "10vh"}, 100, () => {
-        $(this).css("background-color", "transparent");
-    });
-
-});
-
-$("img.pic:first").mouseenter(function () {//first image details
-
-    var selectText = ["Logo and banner design; comissioned for a producer.",
-    "Inspired by 80s AV hardware and a ton of Japanese pop from the same period of time.",
-    "The concept for a foldable speaker system which uses the geometry of a butterfly to allow a wider spread of audio coverage.",
-    "Grad-year class sweater concept; these designs have long existed as gears and machine parts and a grad year. Shipments of orders pending.",
-    "Quick sketches to practice form and anatomy.",
-    "Concept developed around the modular lunchboxes of some East Asian cultures. Sections are magnetic pull-aparts on twisted teeth.",
-    "The first attempt at designing a trainer which does not use traditional laces. This design attempts wrapping elments of the shoe body and reattaching to secure tightness.",
-    "A study on the maximized geometry of honeycomb and how to effectively use it's spatial advantage in residential planning.",
-    "Covering the origin of playing cards, the Ace traces back to origins of Roman currency and Egyptian gods.",
-    "Comissioned asset formulated from the recognizable appearance of UV resistant prescription bottles.",
-    "Modern logo design intended for tech industry.",
-    "Inspired by the awareness of air quality differences and their inevitable long-term impacts.",];
-
-    $(this).animate({opacity: '0'}, 250, (projNum) => {
-
-        const info = document.createElement("div");
-
-        var projNum = parseInt($('div.horizontal-list').text().substring(1, 3), 10) - 1;        
-
-        //const imgLeft = this.getBoundingClientRect().left;
-        //const imgTop = this.getBoundingClientRect().top; //broken at the moment
-      
-        info.className = "info";
-        info.innerHTML = selectText[projNum];
-        //info.innerHTML = selectText[blah];
-        info.style.backgroundColor = "#ffff4c";
-        info.style.zIndex = -10;
-        info.style.lineHeight = 1.5;
-        info.style.textAlign = "justify";
-        info.style.position = "absolute";
-        info.style.float = "right";
-        info.style.width = "100%";//this.clientWidth + "px";
-        info.style.height = this.clientHeight + "px";
-        //info.style.top = imgTop;
-        info.style.top = 0;
-        //info.style.left = imgLeft + "px";
-        info.style.fontSize = "64px";
-
-        $('div.mySlides').append(info);
-
-    });
- 
 
 }).mouseout(function () {
 
-
-    $(this).animate({opacity: '1'}, 100, () => {
-        $('div.info').remove();
+    $(this).animate({backgroundColor: "#080708"}, 50, () => {
+            $(this).css("color", "#fafafa");
+            $(this).css("font-family", "montserratregular");
     });
-    /*$('div.info').css('display', 'none');
 
-    if($('div.info').css('display', 'none'))
-    {
-        $('div.info').remove();
-        $(this).animate({opacity: '1'}, 200)
-    }*/
 });
 
-//add next/prev project options for routing
+$("a.cat-link-text").click(function () {
+
+    var pathname = window.location.pathname; 
+    var inIndust = pathname.includes("indust/");
+    var inUiux = pathname.includes("u/");
+    var inGraphic = pathname.includes("graph/");
+    var industText = ["This concept was inspired by the modular lunchboxes widely used in some East Asian cultures, and the system of pockets used in the structure of bamboo. Sections are magnetic pull-aparts on curved teeth.",
+        "An untraditional take on the classic Grad-year sweater. These designs have long existed in engineering tradition as gears and machine parts and a grad year. This design revitalized the concept while paying respect to the gradiated nature of the mechanical engineering discipline.",
+        "A concept for a foldable portable speaker system which uses the geometry of a butterfly to allow a wider spread of audio transmission in a more transportable and classy device.", 
+        "A study on the maximized geometry of honeycomb cells and how to effectively use it's spatial and modular advantages in residential planning."];
+    var graphText = ["", 
+        "A redesign of the Spotify logo inspired by 1920s art deco typefaces such as those of A.M. Cassandre. The commercial coming-of-age for radio communication occured throughtout the 20s and 30s, which is where this influence was derived from.",
+        "A collection of graphics for playlists I make in my spare time. Each playlist follows the mood of whatever was going on in my life at the time.",
+        "For my first attempt at designing a typeface I chose to try modernizing the style of typical slab serifs. Accent has geometric linework and a sizeable x height to suit large exclamatory messages.",
+        "",
+        "An identity for a local producer.",
+        "An assignment completed to practice body layout and page organization."];
+    
+    var linkid = $(this).attr('id');
+
+    if(inIndust) {
+        var category = "indust";
+        $("div.nav").animate({background: "#fafa"});
+    } else if(inUiux) {
+        var category = "uiux";
+        $("div.nav").animate({background: "#fafa"});
+    } else if (inGraphic) {
+        var category = "graph";
+        $("div.nav").animate({background: "#fafa"});
+    }
+
+    /*
+    var fs = require("fs");
+    var text = fs.readFileSync("./" + category + ".txt");
+    var textByLine = text.split("\n");
+    */
+
+    var description = textByLine[linkid];
+
+    console.log(description);
+
+     window.localStorage.setItem('projInfo', 'description');
+
+});
 

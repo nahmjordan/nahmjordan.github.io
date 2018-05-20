@@ -14,12 +14,15 @@ app.set('views', './views');//error
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 
-app.use(favicon(path.join(publicDir, '/style/jn1000-favicon.gif')));
-
 
 //imgs array pulls all img names from folder that contain "__"
 
 var projects = {
+
+    avro: {
+        title: "#1 Avro_."
+    },
+
     ninepce: {
         title: "#1 ninepce_.",
         imgs:  ['/public/style/projects/ninepce-banner.jpg'],
