@@ -541,7 +541,7 @@ img.pic {
 @media only screen and (max-width: 600px) {
     #title {
     font-size: 40px;
-    position:relative;
+    position:absolute;
     bottom:58px;
     width:100%;
     margin-left: 20px;
@@ -560,6 +560,7 @@ img.pic {
     left: -30px;
     top: 15px;
     }
+
 
     .proj-details {
     font-size: 18px;
@@ -591,7 +592,6 @@ img.pic {
     font-size: 12px;
     color: #080708;
     text-align: left;
-    position: relative;
     left: 29px;
     bottom: 10px;
     right: 10px;
@@ -646,7 +646,6 @@ img.pic {
     font-size: 24px;
     color: #080708;
     text-align: left;
-    position: relative;
     left: 29px;
     bottom: 10px;
     right: 10px;
@@ -715,13 +714,25 @@ img.pic {
     font-size: 12px;
     color: #080708;
     text-align: left;
-    position: relative;
     left: 29px;
     bottom: 10px;
     right: 10px;
     z-index: 10;
     max-width: 100%;
     }
+
+    a.cat-link-text {
+    font-family: montserratregular;
+    font-variant: small-caps;
+    font-size: 12px;
+    color: #080708;
+    text-align: left;
+    max-width: 100%;
+    position: relative;
+    left: -30px;
+    top: 15px;
+    }
+
 
     img[src="public/style/ellipse.png"] {
         height: 31px;
