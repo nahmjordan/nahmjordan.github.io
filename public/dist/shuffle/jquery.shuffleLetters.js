@@ -2,7 +2,7 @@
  * @name		Shuffle Letters
  * @author		Martin Angelov
  * @version 	1.0
- * @url			http://tutorialzine.com/2011/09/shuffle-letters-effect-jquery/
+ * @url			https://tutorialzine.com/2011/09/shuffle-letters-effect-jquery/
  * @license		MIT License
  */
 
