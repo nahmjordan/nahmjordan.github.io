@@ -541,7 +541,7 @@ img.pic {
 @media only screen and (max-width: 600px) {
     #title {
     font-size: 40px;
-    position:absolute;
+    position:relative;
     bottom:58px;
     width:100%;
     margin-left: 20px;
@@ -591,7 +591,7 @@ img.pic {
     font-size: 12px;
     color: #080708;
     text-align: left;
-    position: absolute;
+    position: relative;
     left: 29px;
     bottom: 10px;
     right: 10px;
@@ -646,7 +646,7 @@ img.pic {
     font-size: 24px;
     color: #080708;
     text-align: left;
-    position: absolute;
+    position: relative;
     left: 29px;
     bottom: 10px;
     right: 10px;
@@ -715,7 +715,7 @@ img.pic {
     font-size: 12px;
     color: #080708;
     text-align: left;
-    position: absolute;
+    position: relative;
     left: 29px;
     bottom: 10px;
     right: 10px;
