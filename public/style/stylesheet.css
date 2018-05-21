@@ -700,7 +700,7 @@ img.pic {
     a.link-text {
     font-family: montserratregular;
     font-variant: small-caps;
-    font-size: 24px;
+    font-size: 12px;
     color: #080708;
     text-align: left;
     position: absolute;
@@ -709,18 +709,6 @@ img.pic {
     right: 10px;
     z-index: 10;
     max-width: 100%;
-    }
-
-    a.cat-link-text {
-    font-family: montserratregular;
-    font-variant: small-caps;
-    font-size: 24px;
-    color: #080708;
-    text-align: left;
-    max-width: 100%;
-    position: relative;
-    left: -30px;
-    top: 15px;
     }
 
     img[src="public/style/ellipse.png"] {
