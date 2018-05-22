@@ -87,13 +87,7 @@ body {
     color: #080708;
 }
 
-#link-container-contact {
-    position: absolute;
-    bottom:10px;
-    width: 100%;
-}
-
-#link-container-about {
+#link-container-about, #link-container-contact {
     position: absolute;
     bottom:10px;
     width: 100%;
