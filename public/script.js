@@ -22,7 +22,7 @@ $(document).ready(function () {
         $("a.cat-link-text").animate({backgroundColor: "#080708", color: "#fafafa"}, 200);
         
         $("div#nav").animate({opacity: "0"}, 50);
-        $("div.home-button").animate({opacity: "0"}, 50);
+        $("a > div.home-button").animate({opacity: "0"}, 50);
 
         document.body.style.backgroundRepeat = "no-repeat";//no tiling
         document.body.style.backgroundPosition = "cover";
@@ -49,7 +49,7 @@ $(document).ready(function () {
         document.body.style.background = "#fafafa";
         //bkgdImg.src = " ";
         $("div#nav").animate({opacity: "1"}, 50);
-        $("div.home-button").animate({opacity: "1"}, 50);
+        $("a > div.home-button").animate({opacity: "1"}, 50);
 
         $("a.cat-link-text").animate({backgroundColor: "transparent", color: "#080708"}, 100);
 
