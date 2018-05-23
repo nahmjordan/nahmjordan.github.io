@@ -34,7 +34,9 @@ $(document).ready(function () {
         if(window.location.pathname.includes("industrial")) {
            var teaserImages = ["bamboo-open.png", "honeycomb-combo-1.jpg", "mech2020-front.jpg", "monarch-buttons.jpg"];
         }
-
+        else if (window.location.pathname.includes("graphic")) {
+           var teaserImages = ["mech2020-banner.png", "avro-banner.png", "spotify-logo-banner.png", "playlists-banner.png", "accent-banner.png", "wedjat-slide.png", "ninepce-banner.png"];
+        }
         else if (window.location.pathname.includes("ui-ux")) {
             var teaserImages = ["spotify-mockup.png", "weather.png"];
         }

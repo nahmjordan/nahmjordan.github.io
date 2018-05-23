@@ -293,7 +293,6 @@ a.link-text:hover {
 div#about-text {
     background: #fbec5d;
     padding: 25px;
-    font-size: 40px;
 }
 
 a.close:hover, a.next:hover, a.prev:hover {
