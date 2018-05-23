@@ -48,7 +48,8 @@ $(document).ready(function () {
     }).mouseout(function () {
         document.body.style.background = "#fafafa";
         //bkgdImg.src = " ";
-        $("div#nav").animate({opacity: "1"}, 100);
+        $("div#nav").animate({opacity: "1"}, 50);
+        $("div.home-button").animate({opacity: "1"}, 50);
 
         $("a.cat-link-text").animate({backgroundColor: "transparent", color: "#080708"}, 100);
 
