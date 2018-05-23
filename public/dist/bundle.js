@@ -250,7 +250,7 @@ $(document).ready(function () {
         $("a.cat-link-text").animate({backgroundColor: "#080708", color: "#fafafa"}, 200);
         
         $("div#nav").animate({opacity: "0"}, 50);
-        $("div.home-button").animate({opacity: "0"}, 50);
+        $("a > div.home-button").animate({opacity: "0"}, 50);
 
         document.body.style.backgroundRepeat = "no-repeat";//no tiling
         document.body.style.backgroundPosition = "cover";
@@ -263,10 +263,10 @@ $(document).ready(function () {
            var teaserImages = ["bamboo-open.png", "honeycomb-combo-1.jpg", "mech2020-front.jpg", "monarch-buttons.jpg"];
         }
         else if (window.location.pathname.includes("graphic")) {
-           var teaserImages = ["mech2020-banner.png", "avro-banner.png", "spotify-logo-banner.png", "playlists-banner.png", "accent-banner.png", "No1.jpg", "ninepce-banner.png"];
+           var teaserImages = ["mech2020-banner.png", "avro-banner.png", "spotify-logo-banner.png", "playlists-banner.png", "accent-banner.png", "wedjat-slide.png", "ninepce-banner.png"];
         }
         else if (window.location.pathname.includes("ui-ux")) {
-            var teaserImages = ["spotify-track-mockup.png", "weather.png"];
+            var teaserImages = ["spotify-mockup.png", "weather.png"];
         }
 
         document.body.style.backgroundImage = "url('./public/style/projects/" + teaserImages[$(this).attr('id')] + "')";
@@ -276,7 +276,8 @@ $(document).ready(function () {
     }).mouseout(function () {
         document.body.style.background = "#fafafa";
         //bkgdImg.src = " ";
-        $("div#nav").animate({opacity: "1"}, 100);
+        $("div#nav").animate({opacity: "1"}, 50);
+        $("a > div.home-button").animate({opacity: "1"}, 50);
 
         $("a.cat-link-text").animate({backgroundColor: "transparent", color: "#080708"}, 100);
 
