@@ -37,9 +37,9 @@ $(document).ready(function () {
         else if (window.location.pathname.includes("graphic")) {
            var teaserImages = ["mech2020-banner.png", "avro-banner.png", "spotify-logo-banner.png", "playlists-banner.png", "accent-banner.png", "wedjat-slide.png", "ninepce-banner.png"];
         }
-        /*else if (window.location.pathname.includes("ui-ux")) {
+        else if (window.location.pathname.includes("ui-ux")) {
             var teaserImages = ["spotify-mockup.png", "weather.png"];
-        }*/
+        }
 
         document.body.style.backgroundImage = "url('./public/style/projects/" + teaserImages[$(this).attr('id')] + "')";
         //bkgdImg.src = "./public/style/projects/" + teaserImages[$(this).attr('id')];
