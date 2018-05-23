@@ -38,7 +38,7 @@ $(document).ready(function () {
            var teaserImages = ["mech2020-banner.png", "avro-banner.png", "spotify-banner.png", "playlists-banner.png", "accent-banner.png", "wedjat-slide.png", "ninepce-banner.png"];
         }
         else if (window.location.pathname.includes("ui-ux")) {
-            var teaserImages = ["spotify-track-mockup.png", "weather3-mockup.png"];
+            var teaserImages = ["spotify-mobile-banner.png", "weather-banner.png"];
         }
 
         document.body.style.backgroundImage = "url('./public/style/projects/" + teaserImages[$(this).attr('id')] + "')";
