@@ -689,6 +689,7 @@ img.pic {
     td, div > a.link-test {
         height: 75px;
         max-width: 250px;
+        white-space: nowrap;
     }
 
     .proj-details {
@@ -756,6 +757,7 @@ img.pic {
     td, div > a.link-test {
     height: 75px;
     max-width: 300px;
+    white-space: nowrap;
     }
 
     .proj-details {
@@ -811,6 +813,7 @@ img.pic {
 
     td, div > a.link-test {
     height: 100px;
+    white-space: nowrap
     }
 
     .proj-details {
