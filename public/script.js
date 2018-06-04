@@ -42,7 +42,6 @@ $(document).ready(function () {
         }
 
         document.body.style.backgroundImage = "url('./public/style/projects/" + teaserImages[$(this).attr('id')] + "')";
-        //bkgdImg.src = "./public/style/projects/" + teaserImages[$(this).attr('id')];
 
 
     }).mouseout(function () {
